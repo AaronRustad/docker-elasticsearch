@@ -16,6 +16,6 @@ RUN wget --no-check-certificate https://download.elasticsearch.org/elasticsearch
 RUN tar -xf elasticsearch-0.90.5.tar.gz
 RUN rm elasticsearch-0.90.5.tar.gz
 
-EXPOSE 9200
+EXPOSE :9200
 
 CMD elasticsearch-0.90.5/bin/elasticsearch -f
