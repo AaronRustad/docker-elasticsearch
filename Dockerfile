@@ -12,10 +12,10 @@ RUN apt-get install oracle-java7-installer -y
 
 # ElasticSearch
 RUN apt-get install wget -y
-RUN wget --no-check-certificate https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.5.tar.gz
-RUN tar -xf elasticsearch-0.90.5.tar.gz
-RUN rm elasticsearch-0.90.5.tar.gz
+RUN wget --no-check-certificate https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.8.tar.gz
+RUN tar -xf elasticsearch-0.90.8.tar.gz
+RUN rm elasticsearch-0.90.8.tar.gz
 
 EXPOSE :9200
 
-CMD elasticsearch-0.90.5/bin/elasticsearch -f
+CMD /elasticsearch-0.90.8/bin/elasticsearch -f
